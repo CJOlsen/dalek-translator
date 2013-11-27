@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Dalek Translator</title>
+<link href="/static/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>About the Dalek Translator</h2>
+  <p>Author: Christopher Olsen</p>
+  <p>Written For: Fun</p>
+  <p>Source Code Available <a href=https://github.com/cjolsen/dalek-translator>Here!</a></p>
+  <p>I and this web-app have no affiliation with the BBC or Doctor Who.</p>
+  <h3>How does it work?</h3>
+  <p>The Dalek Translator is a small Python web application built using the Flask framework.  It makes use of the <a href=http://nltk.org>Natural Language Processing Toolkit</a> which is an *awesome* Python library that does analysis of words (to put it lightly, it's really powerful.)</p>
+  <h3>That's cool, can I have more details?</h3>
+  <p>In this application what's happening is the inputted words are being transformed into what are called "synsets" which are <a href=http://nltk.org/howto/wordnet.html>sets of synonyms</a>.  Then the synset of the word in question is compared to the synsets of verbs that end in "-ate", the most similar synset wins (with a heavy bias towards 'exterminate').  Synsets are compared based on Leacock Chodorow Similarity which is described in the <a href=http://nltk.org/_modules/nltk/corpus/reader/wordnet.html>docs</a> in more detail than I can provide (search for lch_similarity).<p>
+  <h3>What's the license of the Dalek Translator?</h3>
+  <p> All of my code is GPLv3, but the NLTK is distributed under the Apache Version 2.0 license.  That gets complicated so if you find yourself really wishing my code was *also* Apache 2.0 license you can ask me to release it that way, too.  You should also tell me why, especially if it's for a reason other than commercial use.</p>
+  <h3>Why does it take forever to load sometimes?</h3>
+  <p> The Dalek Translator is hosted on a "sleepy" web server, which means that after an hour of inactivity the app goes to sleep to save resources.  If it's sleeping when you try to visit there's a wait because it has to wake up and get its bearings.  Where am I?  What am I?  Oh I'm a webserver, better start serving pages...</p>
+ <h3>Sounds like fun, how do I contribute?</h3>
+ <p> If you're familiar with GitHub you can just <a href=https://github.com/cjolsen/dalek-translator>get crackin'</a>.  If I don't accept your changes you can always fork the project and call it "The Better Dalek Translator" then I'll change the name of this one to "The One And Only Original And Forever Best Dalek Translator" and we'll start a war for internet dominance to rival the Time War itself.  If you're not familiar with Git and would like to contribute, you essentially fork the project, work on it locally and then submit a 'pull request' to have your changes absorbed into the main project.</p>
+</body>

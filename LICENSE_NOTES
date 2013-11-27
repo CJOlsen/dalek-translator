@@ -1,0 +1,5 @@
+This program makes use of the Natural Language Processing Toolkit (http://nltk.org/) which is under a different license than this program.  The NLTK is licensed under the Apache Version 2.0 License (http://code.google.com/p/nltk/source/browse/trunk/nltk/LICENSE.txt).
+
+It is believed by the author that inclusion of the NLTK in this project is permissable under both the Apache 2.0 and GPLv3 licenses based on this document: http://www.apache.org/licenses/GPL-compatibility.html.
+
+It is also believed by the author that the use of the word 'Dalek' falls under fair-use guidelines considering the non-commercial and comedic nature of this program.  All ownership of the word 'Dalek' remains with the BBC.

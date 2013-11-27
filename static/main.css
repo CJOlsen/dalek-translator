@@ -1,0 +1,14 @@
+body
+{
+    background-color:#ffffcc;
+}
+
+a:link
+{
+    color:grey;
+}
+
+a:hover
+{
+    color:black;
+}

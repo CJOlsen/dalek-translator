@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block body %}
+<link href="/static/main.css" rel="stylesheet" type="text/css" />
+
+<script type=text/javascript>
+$(function () {
+    var submitWord = function(e) {
+	// get text from the input field, replace spaces with underscores, send
+	// to the server and update 'result' with whatever comes back.  
+	// (Some lemmas in the db are multi-word phrases.)
+	var input_text = $('input[name="submit_field"]').val()
+	$.getJSON(
+	    $SCRIPT_ROOT + "/_aj",                  // url
+	    { word: input_text.replace(" ", "_") }, // data to server
+	    function(data) {
+		$('#result').text(data.result);
+	    });                                     // success function
+	    return false;
+    }; 
+    $('button#input_button').bind('click', submitWord);
+});
+</script>
+
+<h2>Dalek Translator</h2>
+<p>
+    <input type=text size=25 name=submit_field>
+    <span id=result>???</span>
+</p>  
+<button type="button" id=input_button>How would a Dalek say it?</button>
+<br>
+<a href="/about">(about)</a>
+{% endblock %}
