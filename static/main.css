@@ -12,3 +12,18 @@ a:hover
 {
     color:black;
 }
+
+.h-center
+{
+    text-align:center;
+}
+
+.sizer
+{
+    height:320px;
+    width:320px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+}
